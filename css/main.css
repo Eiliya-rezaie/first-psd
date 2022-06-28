@@ -638,7 +638,32 @@
             background-color: #fff;
             transition: all linear 110ms; }
             body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(3) > section:nth-of-type(5):hover {
-              background-color: #378cc4; } }
+              background-color: #378cc4; }
+  body > section.form {
+    width: 100%;
+    height: 600px;
+    background-color: #378cc4;
+    position: relative; }
+    body > section.form::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: url("../images/form/asli.png") no-repeat center center scroll;
+      background-size: cover;
+      position: absolute; }
+    body > section.form > section:nth-of-type(1) {
+      width: 100%; }
+      body > section.form > section:nth-of-type(1) > h1:nth-of-type(1) {
+        width: 100%;
+        text-align: center;
+        color: #56504d;
+        font-size: 48px;
+        font-family: "opensans";
+        font-weight: 900;
+        padding-top: 40px;
+        box-sizing: border-box; }
+        body > section.form > section:nth-of-type(1) > h1:nth-of-type(1) > span:nth-of-type(1) {
+          color: white; } }
 
 * {
   margin: 0; }
