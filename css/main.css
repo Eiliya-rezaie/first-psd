@@ -650,7 +650,8 @@
       height: 100%;
       background: url("../images/form/asli.png") no-repeat center center scroll;
       background-size: cover;
-      position: absolute; }
+      position: absolute;
+      z-index: 88889; }
     body > section.form > section:nth-of-type(1) {
       width: 100%;
       position: absolute; }
@@ -676,7 +677,8 @@
       justify-content: center;
       align-items: flex-start;
       padding-top: 40px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      z-index: 99999; }
       body > section.form > form:nth-of-type(1) > input[type=email] {
         display: block;
         width: 38%;
@@ -685,7 +687,13 @@
         box-sizing: border-box;
         border-radius: 10px;
         border: none;
-        outline: none; }
+        outline: none;
+        font-size: 16px; }
+        body > section.form > form:nth-of-type(1) > input[type=email]:invalid {
+          border: 2px solid red;
+          background-color: rgba(255, 0, 0, 0.186); }
+        body > section.form > form:nth-of-type(1) > input[type=email]:valid {
+          border: 1px solid green; }
       body > section.form > form:nth-of-type(1) > input[type=text] {
         display: block;
         width: 38%;
@@ -695,7 +703,10 @@
         border-radius: 10px;
         border: none;
         outline: none;
-        margin-top: 30px; }
+        margin-top: 30px;
+        font-size: 16px; }
+        body > section.form > form:nth-of-type(1) > input[type=text]:invalid {
+          border: 2px solid red; }
       body > section.form > form:nth-of-type(1) > button {
         width: 20%;
         display: block;
@@ -709,9 +720,17 @@
         box-sizing: border-box;
         border: none;
         border-radius: 10px;
-        margin-top: 40px; }
+        margin-top: 40px;
+        transition: all linear 110ms; }
         body > section.form > form:nth-of-type(1) > button:hover {
-          box-shadow: 4px 4px 7px black; } }
+          box-shadow: 6px 6px 12px black;
+          background-color: #fff;
+          border: 2px solid black;
+          color: #000;
+          font-weight: 900;
+          width: 22%;
+          margin-left: calc(50% - 22% /2);
+          font-size: 34px; } }
 
 * {
   margin: 0; }
