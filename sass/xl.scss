@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+}
+@media (min-width:1200px) {
+    body{
+        // MAKE HEADER
+        header{
+            width: 100%;
+            >section:nth-of-type(1){
+                width: 100%;
+                height: 50px;
+                display: flex;
+                flex-flow: row wrap;
+                background-color: #00a2e8;
+                >section:nth-of-type(1){
+                    display: flex;
+                    width: 35%;
+                    height: inherit;
+                    justify-content: end;
+                    align-items: center;
+                    @include transitionshort;
+                    >a{
+                        &:hover{
+                            text-shadow: 6px 6px 6px rgb(2, 54, 121);
+                            font-weight: 600;
+                        }
+                    }
+                    >a:nth-of-type(1){
+                        @include font;
+                        font-size: 14px;
+                        color: white;
+                        text-decoration: none;
+                        height: inherit;
+                        display: flex;
+                        align-items: center;
+                        padding-right: 30px;
+                        box-sizing: border-box;                        
+                        >span{
+                            display: flex;
+                            align-items: center;
+                            height: inherit;
+                            padding-right: 6px;
+                            box-sizing: border-box;
+                            >img{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                    >a:nth-of-type(2){
+                        @include font;
+                        font-size: 14px;
+                        color: white;
+                        text-decoration: none;
+                        height: inherit;
+                        display: flex;
+                        align-items: center;    
+                        >span{
+                            display: flex;
+                            align-items: center;
+                            height: inherit;
+                            padding-right: 6px;
+                            box-sizing: border-box;
+                            >img{
+                                width: 18px;
+                                height: 14px;
+                            }
+                        }                    
+                    }
+                }
+                >nav:nth-of-type(1){
+                    display: flex;
+                    width: 65%;
+                    height: inherit;
+                    >ul{
+                        display: flex;
+                        width: 100%;
+                        height: inherit;
+                        justify-content: center;
+                        align-items: center;
+                        padding-left: 160px;
+                        box-sizing: border-box;
+                        >li{
+                            list-style: none;
+                            display: flex;
+                            align-items: center;
+                            height: inherit;
+                            width: auto;
+                            @include transitionshort;
+                            &:hover{
+                                background-color: white;
+                                color: #00a2e8;
+                            }
+                            &:hover>a{
+                                color: #00a2e8;
+                                font-weight: 900;
+                            }
+                            >a{
+                                text-decoration: none;
+                                color: white;
+                                display: block;
+                                padding: 10px 12px;
+                                box-sizing: border-box;
+                                @include font;
+                                font-size: 14px;
+                                @include transitionshort;
+                            }
+                        }
+                    }
+                }
+            }
+            >section:nth-of-type(2){
+                width: 100%;
+                height:72px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                // border-bottom: 2px solid black;
+                >section:nth-of-type(1){
+                    width:20%;
+                    height: inherit;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    // background-color: #00a2e8;
+                    >h1{
+                        @include font;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 30px;
+                        &::first-letter{
+                            color: #00a2e8;
+                        }
+                    }
+                }
+                // make menu
+                >nav:nth-of-type(1){
+                    width: 50%;
+                    height: inherit;
+                    display: flex;
+                    padding-right: 50px;
+                    box-sizing: border-box;
+                    >ul{
+                        width: 100%;
+                        height: inherit;
+                        display: flex;
+                        justify-content: end;
+                        >li{
+                            list-style: none;
+                            height: inherit;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            >a{
+                                display: block;
+                                padding: 10px 12px;
+                                text-decoration: none;
+                                @include font;
+                                font-size: 14px;
+                                color: black;
+                                font-weight: 600;
+                                @include transitionshort;
+                                &:hover{
+                                    color: #00a2e8;
+                                }
+                            }
+                        }
+                    }
+                }
+                // end make menu
+                >form:last-child{
+                    width: 30%;
+                    height: inherit;
+                    >section:nth-of-type(1){
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // background: #00a2e8;
+                        >span{
+                            font-size: 25px;
+                            padding-right: 10px;
+                            box-sizing: border-box;
+                        }
+                        >input[type=search]{
+                            border:2px solid #00a2e8;
+                            border-radius: 30px;
+                            outline: none;
+                            width: 50%;
+                            padding: 10px;
+                            box-sizing: border-box;
+                            @include transitionlong;
+                            &:focus{
+                                width: 60%;
+                                background-color: #00a2e8;
+                                color: white;
+                                &::placeholder{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // END MAKE HEADER
+        // MAKE BODY
+        >section:nth-of-type(1){
+            width: 100%;
+            height: 640px;
+            // position: relative;
+            body {
+                background: #eee;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+              }
+              .swiper {
+                width: 100%;
+                height: 100%;
+                // position: relative;
+              }
+        
+              .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                position: relative !important;
+        
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                position: relative;
+              }
+              .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              .swiper-slide{
+                >section{
+                    position: absolute;
+                    width: inherit;
+                    height: inherit;
+                    background-color: rgba(0, 0, 0, 0.614);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    >section{
+                        width: 50%;
+                        // display: flex;
+                        // flex-flow: column wrap;
+                        // justify-content: center;
+                        >h1{
+                            font-size: 55px;
+                            @include font;
+                            color: #fff;
+                            >span{
+                                color: #00a2e8;
+                            }
+                        }
+                        >h1:nth-of-type(1){
+                            padding-bottom: 30px;
+                            box-sizing: border-box;
+                        }
+                        >p{
+                            font-size: 20px;
+                            @include font;
+                            color: #fff;
+                            width: 100%;
+                            padding: 20px 50px 0px 50px;
+                            box-sizing: border-box;
+                            line-height: 40px;
+                        }
+                    }
+                }
+              }
+        }
+        // make about
+        >section:nth-of-type(2){
+            width: 100%;
+            height:430px;
+            background-color:white;
+            >section:nth-of-type(1){
+                width: 100%;
+                >h1{
+                    @include font;
+                    color: black;
+                    font-size: 36px;
+                    font-weight: lighter;
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 60px;
+                    box-sizing: border-box;
+                    >span{
+                        color: #00a2e8;
+                    }
+                }
+            }
+            >section:nth-of-type(2){
+                width: 100%;
+                display: grid;
+                grid-template-areas: 
+                "section section section section";
+                // justify-content: center;
+                padding: 65px 150px;
+                justify-content: last baseline;
+                box-sizing: border-box;
+                >section{
+                    width: 100%;
+                    text-align: center;
+                    padding: 0px 7px;
+                    box-sizing: border-box;
+                    >h1:nth-of-type(1){
+                        @include font;
+                        color: rgba(0, 0, 0, 0.69);
+                        font-weight: 900;
+                        padding-top: 30px ;
+                    }
+                    >p:nth-of-type(1){
+                        @include font;
+                        color: rgba(0, 0, 0, 0.69);
+                        font-weight: 900;
+                        text-align: center;
+                        font-size: 13px;
+                        padding-top: 21px ;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+        // end make about
+        // make collection
+        >section:nth-of-type(3){
+            width: 100%;
+            height: 700px;
+            background: url("../images/new-colection/bg.png") no-repeat center center scroll;
+            background-size: cover;
+            // position: relative;
+            >section:nth-of-type(1){
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.703);
+                // make detail of collection
+                >section:nth-of-type(1){
+                    width: 100%;
+                    padding-top: 50px;
+                    box-sizing: border-box;
+                    >h1{
+                        @include font;
+                        font-size: 48px;
+                        color: #fff;
+                        text-align: center;
+                        text-shadow: 4px 4px 6px black;
+                        >span{
+                            color: #00a2e8;
+                        }
+                    }
+                }
+                // end make detail of collection
+                // make new collection
+                >section:nth-of-type(2){
+                    width: 100%;
+                    height:585px;
+                    display: flex;
+                    padding-top: 90px;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    >section{
+                        text-align: center;
+                        width: 18%;
+                        height: 360px;
+                        background-color: #fff;
+                        margin: 0px 10px;
+                        // top of grid
+                        >section:nth-of-type(1){
+                            width: 100%;
+                            height: 322px;
+                            background-color: #00a2e8;
+                            box-sizing: border-box;
+                            position: relative;
+                            overflow: hidden;
+                            &:hover>section.absolute{
+                                opacity: 1;
+                            }
+                            // make collection hover
+                            >section.absolute{
+                                width: 96%;
+                                height: 96%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                background-color: #7a716d;
+                                position: absolute;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                opacity: 0;
+                                @include transitionshort;
+                                >section{
+                                    width: 90%;
+                                    height: 40%;
+                                    text-align: center;
+                                    // display: flex;
+                                    // justify-content: center;
+                                    // flex-flow: column wrap;
+                                    background:transparent;
+                                    >section.icon{
+                                        padding: 10px 15px 0px 15px;
+                                        box-sizing: border-box;
+                                        // display: block;
+                                        >span{
+                                            display: inline-block;
+                                            width: 50px;
+                                            height: 50px;
+                                            line-height: 50px;
+                                            font-size: 30px;
+                                            color: #fff;
+                                            border: 2px solid #fff;
+                                            // padding: 5px;
+                                            box-sizing: border-box;
+                                            @include transitionlong;
+                                            &:hover{
+                                                background-color: #00a2e8;
+                                                border: none;
+                                            }
+                                        }
+                                    }
+                                    >section.shopping{
+                                        width: 65%;
+                                        display: inline-block;
+                                        border: 2px solid lightgray;
+                                        background-color:transparent;
+                                        margin-top: 10px;
+                                        // text-align: center;
+                                        @include transitionlong;
+                                        &:hover{
+                                            background-color: #35312e;
+                                        }
+                                        >span{
+                                            width: 50%;
+                                            @include font;
+                                            color: white;
+                                            text-transform: uppercase;
+                                            >span{
+                                                font-size: 24px;
+                                                color: lightgray;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // end make collection hover
+                            &:hover~section>section:nth-of-type(1){
+                                background-color: #00a2e8;
+                            }
+                            &:hover~section>section:nth-of-type(2){
+                                background-color: #86c3dd;
+                            }
+                        }
+                        // top of grid
+                        // bootom of grid
+                        >section:nth-of-type(2){
+                            width: 100%;
+                            height:40px;
+                            display: flex;
+                            align-items: center;
+                            background-color: aqua;
+                            >section:nth-of-type(1){
+                                width: 80%;
+                                height: inherit;
+                                background-color: #35312e;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+                                box-sizing: border-box;
+                                @include transitionlong;
+                                >span{
+                                    font-size: 18px;
+                                    @include font;
+                                    color: #fff;
+                                }
+                            }
+                            >section:nth-of-type(2){
+                                width: 20%;
+                                height: inherit;
+                                background-color: #948a85;
+                                display:flex ;
+                                justify-content: center;
+                                align-items: center;
+                                @include transitionlong;
+                                >span{
+                                    font-size: 18px;
+                                    @include font;
+                                    color: white;
+                                }
+                            }
+                        }
+                        // bottom of grid
+                    }
+                }
+                // end make new collection
+            }
+        }
+        // end make collection
+        // make product
+        >section:nth-of-type(4){
+            width: 100%;
+            background-color:#378cc4;
+            // justify-content: center;
+            padding: 50px 0px;
+            box-sizing: border-box;
+            >h1{
+                @include font;
+                font-size: 50px;
+                color: white;
+                text-align: center;
+                text-shadow: 3px 3px 5px black
+            }
+            >h2{
+                @include font;
+                font-size: 36px;
+                font-weight: lighter;
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        >section:nth-of-type(5){
+            width: 100%;
+            height:850px;
+            background: url("../images/our-product/bg.png") no-repeat center center scroll;
+            background-size: cover;
+            // position: relative;
+            >section:nth-of-type(1){
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.813);
+                // make detail of collection
+                >section:nth-of-type(1){
+                    width: 100%;
+                    padding-top: 50px;
+                    box-sizing: border-box;
+                    >h1{
+                        @include font;
+                        font-size: 48px;
+                        color: #fff;
+                        text-align: center;
+                        text-shadow: 4px 4px 6px black;
+                        >span{
+                            color: #00a2e8;
+                        }
+                    }
+                }
+                // end make detail of collection
+                // make new collection
+                >section:nth-of-type(2){
+                    width: 100%;
+                    height:585px;
+                    display: flex;
+                    padding-top: 90px;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    >section{
+                        text-align: center;
+                        width: 22%;
+                        height: 420px;
+                        background-color: #fff;
+                        margin: 0px 10px;
+                        // top of grid
+                        >section:nth-of-type(1){
+                            width: 100%;
+                            height: 410px;
+                            background-color: #00a2e8;
+                            box-sizing: border-box;
+                            position: relative;
+                            overflow: hidden;
+                            &:hover>section.absolute{
+                                opacity: 1;
+                            }
+                            // make collection hover
+                            >section.absolute{
+                                width: 96%;
+                                height: 96%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                background-color: #7a716d;
+                                position: absolute;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                opacity: 0;
+                                @include transitionshort;
+                                >section{
+                                    width: 90%;
+                                    height: 40%;
+                                    text-align: center;
+                                    // display: flex;
+                                    // justify-content: center;
+                                    // flex-flow: column wrap;
+                                    background:transparent;
+                                    >section.icon{
+                                        padding: 10px 15px 0px 15px;
+                                        box-sizing: border-box;
+                                        // display: block;
+                                        >span{
+                                            display: inline-block;
+                                            width: 60px;
+                                            height: 60px;
+                                            line-height: 60px;
+                                            font-size: 45px;
+                                            color: #fff;
+                                            border: 2px solid #fff;
+                                            // padding: 5px;
+                                            box-sizing: border-box;
+                                            @include transitionlong;
+                                            &:hover{
+                                                background-color: #00a2e8;
+                                                border: none;
+                                            }
+                                        }
+                                    }
+                                    >section.shopping{
+                                        width: 63%;
+                                        display: inline-block;
+                                        border: 2px solid lightgray;
+                                        background-color:transparent;
+                                        margin-top: 10px;
+                                        // text-align: center;
+                                        @include transitionlong;
+                                        &:hover{
+                                            background-color: #35312e;
+                                        }
+                                        >span{
+                                            width: 80%;
+                                            @include font;
+                                            color: white;
+                                            font-size: 18px;
+                                            // padding-bottom: 50px;
+                                            // box-sizing: border-box;
+                                            text-transform: uppercase;
+                                            >span{
+                                                font-size: 30px;
+                                                color: lightgray;
+                                                padding-right: 10px;
+                                                box-sizing: border-box;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // end make collection hover
+                            &:hover~section>section:nth-of-type(1){
+                                background-color: #00a2e8;
+                            }
+                            &:hover~section>section:nth-of-type(2){
+                                background-color: #86c3dd;
+                            }
+                        }
+                        // top of grid
+                        // bootom of grid
+                        >section:nth-of-type(2){
+                            width: 100%;
+                            height:40px;
+                            display: flex;
+                            align-items: center;
+                            background-color: aqua;
+                            >section:nth-of-type(1){
+                                width: 80%;
+                                height: inherit;
+                                background-color: #35312e;
+                                display: flex;
+                                align-items: center;
+                                padding-left: 10px;
+                                box-sizing: border-box;
+                                @include transitionlong;
+                                >span{
+                                    font-size: 18px;
+                                    @include font;
+                                    color: #fff;
+                                }
+                            }
+                            >section:nth-of-type(2){
+                                width: 20%;
+                                height: inherit;
+                                background-color: #948a85;
+                                display:flex ;
+                                justify-content: center;
+                                align-items: center;
+                                @include transitionlong;
+                                >span{
+                                    font-size: 18px;
+                                    @include font;
+                                    color: white;
+                                }
+                            }
+                        }
+                        // bottom of grid
+                    }
+                }
+                // end make new collection
+            }
+        }
+        // end make product
+        // END MAKE BODY
+    }
+}

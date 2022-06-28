@@ -1,0 +1,14 @@
+@font-face {
+    font-family:"opensans";
+    src: url("../fonts/opensans/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+    src: url("../fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+@mixin font {
+    font-family: "opensans";
+}
+@mixin transitionshort {
+    transition: all linear 110ms;
+}
+@mixin transitionlong {
+    transition: all linear 300ms;
+}
