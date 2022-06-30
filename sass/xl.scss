@@ -1138,22 +1138,24 @@
                         }
                     }
                 }
-                >section:nth-of-type(2){
-                    width: 100%;
-                    background-color: #000;
-                    >h1:nth-child(1){
-                        width: 100%;
-                        padding: 10px 0px;
-                        box-sizing: border-box;
-                        color: white;
-                        font-size: 18px;
-                        @include font;
-                        background-color: #000;
-                        text-align: center;
-                    }
-                }
             }
             // end make form
+            // make name of designer
+            >section:nth-of-type(3){
+                width: 100%;
+                background-color: #000;
+                >h1:nth-child(1){
+                    width: 100%;
+                    padding: 10px 0px;
+                    box-sizing: border-box;
+                    color: white;
+                    font-size: 18px;
+                    @include font;
+                    background-color: #000;
+                    text-align: center;
+                }
+            }
+            // end make name of designer
         }
         // end make footer
         // END MAKE BODY
