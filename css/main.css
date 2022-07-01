@@ -1901,7 +1901,160 @@
               body > section:nth-of-type(3) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(2) > span {
                 font-size: 18px;
                 font-family: "opensans";
-                color: white; } }
+                color: white; }
+  body > section:nth-of-type(4) {
+    width: 100%;
+    background-color: #378cc4;
+    padding: 50px 0px;
+    box-sizing: border-box; }
+    body > section:nth-of-type(4) > h1 {
+      font-family: "opensans";
+      font-size: 50px;
+      color: white;
+      text-align: center;
+      text-shadow: 3px 3px 5px black; }
+    body > section:nth-of-type(4) > h2 {
+      font-family: "opensans";
+      font-size: 36px;
+      font-weight: lighter;
+      color: white;
+      text-align: center;
+      margin-top: 20px; }
+  body > section:nth-of-type(5) {
+    width: 100%;
+    height: 1150px;
+    background: url("../images/our-product/bg.png") no-repeat center center scroll;
+    background-size: cover; }
+    body > section:nth-of-type(5) > section:nth-of-type(1) {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.813); }
+      body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(1) {
+        width: 100%;
+        padding-top: 50px;
+        box-sizing: border-box; }
+        body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(1) > h1 {
+          font-family: "opensans";
+          font-size: 48px;
+          color: #fff;
+          text-align: center;
+          text-shadow: 4px 4px 6px black; }
+          body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(1) > h1 > span {
+            color: #00a2e8; }
+      body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) {
+        width: 100%;
+        height: 885px;
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 20px;
+        box-sizing: border-box;
+        justify-content: center; }
+        body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section {
+          text-align: center;
+          width: 46%;
+          height: 420px;
+          background-color: #fff;
+          margin: 0px 10px; }
+          body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) {
+            width: 100%;
+            height: 410px;
+            background-color: #00a2e8;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1):hover > section.absolute {
+              opacity: 1; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute {
+              width: 96%;
+              height: 96%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #7a716d;
+              position: absolute;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              opacity: 0;
+              transition: all linear 110ms; }
+              body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section {
+                width: 90%;
+                height: 40%;
+                text-align: center;
+                background: transparent; }
+                body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.icon {
+                  padding: 10px 15px 0px 15px;
+                  box-sizing: border-box; }
+                  body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.icon > span {
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 45px;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    box-sizing: border-box;
+                    transition: all linear 300ms; }
+                    body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.icon > span:hover {
+                      background-color: #00a2e8;
+                      border: none; }
+                body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping {
+                  width: 80%;
+                  display: inline-block;
+                  border: 2px solid lightgray;
+                  background-color: transparent;
+                  margin-top: 10px;
+                  transition: all linear 300ms; }
+                  body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping:hover {
+                    background-color: #35312e; }
+                  body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping > span {
+                    width: 90%;
+                    font-family: "opensans";
+                    color: white;
+                    font-size: 16px;
+                    text-transform: uppercase; }
+                    body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping > span > span {
+                      font-size: 30px;
+                      color: lightgray;
+                      box-sizing: border-box; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1):hover ~ section > section:nth-of-type(1) {
+              background-color: #00a2e8; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1):hover ~ section > section:nth-of-type(2) {
+              background-color: #86c3dd; }
+          body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            background-color: aqua; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(1) {
+              width: 80%;
+              height: inherit;
+              background-color: #35312e;
+              display: flex;
+              align-items: center;
+              padding-left: 10px;
+              box-sizing: border-box;
+              transition: all linear 300ms; }
+              body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(1) > span {
+                font-size: 18px;
+                font-family: "opensans";
+                color: #fff; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(2) {
+              width: 20%;
+              height: inherit;
+              background-color: #948a85;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: all linear 300ms; }
+              body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(2) > span {
+                font-size: 18px;
+                font-family: "opensans";
+                color: white; }
+        body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(3) {
+          margin-top: 50px;
+          width: 95%; } }
 
 * {
   margin: 0; }
