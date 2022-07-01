@@ -801,6 +801,471 @@
             }
         }
         // end make product
+        // make costomerz
+        >section:nth-of-type(6){
+            width: 100%;
+            height: 1400px;
+            background-color: white;
+            >section:nth-of-type(1){
+                width: inherit;
+                >h1:nth-of-type(1){
+                    padding-top: 40px;
+                    box-sizing: border-box;
+                    width: 100%;
+                    text-align: center;
+                    @include font;
+                    font-size: 44px;
+                    text-transform: uppercase;
+                    opacity: 0.7;
+                    font-weight: 900;
+                    >span:nth-of-type(1){
+                        color: #378cc4;
+                        opacity: 1;
+                    }
+                }
+            }
+            >section:nth-of-type(2){
+                width: 100%;
+                display: grid;
+                justify-content:center ;
+                grid-template-areas: 
+                "section"
+                "section"
+                "section"
+                ;
+                grid-template-columns: 1fr;
+                padding: 0px 20px;
+                padding-top: 30px;
+                // padding-left: 0px;
+                box-sizing: border-box;
+                grid-column-gap: 20px;
+                >section{
+                    width: 450px;
+                    padding:30px 0px ;
+                    box-sizing: border-box;
+                    border-top: 2px solid #00a2e8;
+                    // background-color: #00a2e8;
+                    // display: flex;
+                    // flex-flow: column wrap;
+                    // justify-content: center;
+                    // align-items: center;
+                    // make circle
+                    >section:nth-of-type(1){
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        background: #736b66;
+                        margin-left:calc(50% - 150px /2) ;
+                        // text-align: center;
+                    }
+                    // end make circle
+                    // make text
+                    >article:nth-of-type(1){
+                        width: 100%;
+                        >p:nth-of-type(1){
+                            font-size: 15px;
+                            @include font;
+                            text-align: center;
+                            padding-top: 20px;
+                            box-sizing: border-box;
+                            text-align: center;
+                        }
+                    }
+                    // end make text
+                    // make name
+                    >section:nth-of-type(2){
+                        width: 100%;
+                        padding-top: 20px;
+                        box-sizing: border-box;
+                        >p:nth-of-type(1){
+                            width: 100%;
+                            text-align: center;
+                            color: #378cc4;
+                            @include font;
+                            font-size: 18px;
+                            font-weight: 900;
+                        }
+                        >p:nth-of-type(2){
+                            width: 100%;
+                            text-align: center;
+                            @include font;
+                            font-size: 14px;
+                            font-weight: 900;
+                        }
+                    }
+                    // end make name
+                    // make radio
+                    >section:nth-of-type(3){
+                        width: 100%;
+                        display:grid;
+                        justify-content: center;
+                        grid-column-gap: 10px;
+                        grid-template-areas: "section section section section section";
+                        padding-top: 30px;
+                        box-sizing: border-box;
+                        >section{
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 50%;
+                            border: 3px solid black;
+                            background-color: #378cc4;
+                        }
+                        >section:nth-of-type(5){
+                            background-color: #fff;
+                            @include transitionshort;
+                            &:hover{
+                                background-color: #378cc4;
+                            }
+                        }
+                    }
+                    // end make radio
+                }
+            }
+        }
+        // end make costomers
+        // make form
+        >section.form{
+            // make paralax
+            width: 100%;
+            height: 500px;
+            background-color: #378cc4;
+            position: relative;
+            &::after{
+                content:"";
+                width: 100%;
+                height: 100%;
+                background:url("../images/form/asli.png") no-repeat center center scroll;
+                background-size: cover;
+                position:absolute;
+                z-index: 88889;
+            }
+            // end make paralx
+            // make headline
+            >section:nth-of-type(1){
+                width: 100%;
+                position: absolute;
+                >h1:nth-of-type(1){
+                    width: 100%;
+                    text-align: center;
+                    color: #56504d;
+                    font-size: 30px;
+                    @include font;
+                    font-weight: 900;
+                    padding-top: 40px;
+                    box-sizing: border-box;
+                    word-spacing: 10px;
+                    text-shadow: 1px 1px 2px black;
+                    >span:nth-of-type(1){
+                        color: white;
+                    }
+                }
+            }
+            // end make headline
+            >form:nth-of-type(1){
+                // margin-top: 20px;
+                position: absolute;
+                display: flex;
+                flex-flow: column wrap;
+                width: 100%;
+                height: 80%;
+                justify-content: end;
+                align-items: flex-start;
+                padding-top: 0px;
+                box-sizing: border-box;
+                z-index: 99999;
+                >input[type=email]{
+                    display: block;
+                    width: 90%;
+                    margin-left: calc(50% - 90% / 2);
+                    padding: 20px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    &:invalid{
+                        border: 2px solid red;
+                        background-color:rgba(255, 0, 0, 0.186);
+                    }
+                    &:valid{
+                        border: 1px solid green;
+                    }
+                }
+                >input[type=text]{
+                    display: block;
+                    width: 90%;
+                    margin-left: calc(50% - 90% / 2);
+                    padding: 20px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    margin-top: 30px;
+                    font-size: 16px;
+                    &:invalid{
+                        border: 2px solid red;
+                    }
+                }
+                >button{
+                    width: 90%;
+                    display: block;
+                    margin-left: calc(50% - 90% / 2);
+                    font-size: 30px;
+                    @include font;
+                    font-weight: 900;
+                    color: white;
+                    background-color: #786960;
+                    padding: 16px 0px;
+                    box-sizing: border-box;
+                    border: none;
+                    border-radius: 10px;
+                    margin-top: 40px;
+                    @include transitionshort;
+                    &:hover{
+                        box-shadow: 6px 6px 12px black;
+                        background-color: #fff;
+                        border: 2px solid black;
+                        color: #000;
+                        font-weight: 900;
+                        width: 82%;
+                        margin-left:calc(50% - 82% /2);
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+        // end make form
+                // make footer
+                >footer.footer{
+                    width: 100%;
+                    height: 400px;
+                    // background-color: #00a2e8;
+                    // make detail
+                    >section:nth-of-type(1){
+                        width: 100%;
+                        // height: 180px;
+                        background-color: #000;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        box-sizing: border-box;
+                        >h1:nth-of-type(1){
+                            text-align: center;
+                            @include font;
+                            color: white;
+                            font-size: 50px;
+                            font-weight: bolder;
+                            margin-bottom: 10px;
+                        }
+                        >h2:nth-of-type(1){
+                            text-align: center;
+                            @include font;
+                            color: white;
+                            font-size: 22px;
+                            font-weight: bolder;
+                        }
+                    }
+                    // end make detail
+                    // make form
+                    >section:nth-of-type(2){
+                        width: 100%;
+                        height: 840px;
+                        position: relative;
+                        z-index: 79998;
+                        display: flex;
+                        flex-flow: column wrap;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 80000;
+                            background-color: rgba(0, 0, 0, 0.829);
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 80%;
+                            height: 100%;
+                            left: calc(50% - 80% / 2);
+                            background: url("../images/footer/bg-world.png") no-repeat center center scroll;
+                            background-size: contain;
+                            z-index: 80001;
+                        }
+                        >section:nth-of-type(1){
+                            width: 100%;
+                            height:100%;
+                            display: flex;
+                            flex-flow: column wrap;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            bottom: 30%;
+                            z-index: 80010;
+                            padding-top: 30px;
+                            box-sizing: border-box;
+                            >span:nth-of-type(1){
+                                display: block;
+                                text-align: center;
+                                margin-bottom: 10px;
+                                // align-self: flex-start;
+                                @include font;
+                                color: black;
+                                font-size: 70px;
+                                font-weight: bolder;
+                                // padding-left: 60px;
+                                // padding-bottom: 30px;
+                                box-sizing: border-box;
+                                // text-align: left;
+                                &::first-letter{
+                                    color: #378cc4;
+                                }
+                            }
+                            >article:nth-of-type(1){
+                                width: 100%;
+                                // text-align: center;
+                                padding-left: 0px;
+                                box-sizing: border-box;
+                                >h1:nth-of-type(1){
+                                    font-size: 20px;
+                                    color: white;
+                                    @include font;
+                                    text-align: center;
+                                }
+                                >h2:nth-of-type(1){
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    width: 100%;
+                                    padding: 0px 20px;
+                                    padding-top: 30px;
+                                    font-size: 14px;
+                                    color: white;
+                                    @include font;
+                                    line-height: 30px;
+                                }
+                            }
+                            >section:nth-of-type(1){
+                                display: flex;
+                                width:100%;
+                                justify-content: center;
+                                align-items: flex-start;
+                                padding-top: 30px;
+                                padding-left: 30px;
+                                box-sizing: border-box;
+                                >div{
+                                    padding: 10px;
+                                    // background-color: #00a2e8;
+                                    margin-right: 3px;
+                                    color: white;
+                                    font-weight: bolder;
+                                    &:hover{
+                                        border: 2px solid #00a2e8;
+                                    }
+                                }
+                            }
+                        }
+                        >form:nth-of-type(1){
+                            width:100%;
+                            height: 80%;
+                            // background-color:cadetblue ;
+                            // position: relative;
+                            z-index: 80010;
+                            padding-top: 90px;
+                            padding-right: 50px;
+                            box-sizing: border-box;
+                            position: absolute;
+                            bottom: -20%;
+                            // left: calc(50% -100% /2);
+                            >input[type=text]{
+                                display: inline-block;
+                                background-color: white;
+                                width: 100%;
+                                padding: 15px 10px;
+                                box-sizing: border-box;
+                                margin-left: 5.8%;
+                                outline: none;
+                                @include transitionlong;
+                                &::placeholder{
+                                    text-transform: uppercase;
+                                }
+                                &:focus{
+                                    border-radius: 20px;
+                                }                
+                            }
+                            >input[type=email]{
+                                background-color: white;
+                                width: 100%;
+                                padding: 15px 10px;
+                                box-sizing: border-box;
+                                margin-top: 10px;
+                                margin-left: 5.8%;
+                                outline: none;
+                                @include transitionlong;
+                                &::placeholder{
+                                    text-transform: uppercase;
+                                }
+                                &:focus{
+                                    border-radius: 20px;
+                                }
+                            }
+                            >textarea{
+                            margin-top: 15px;
+                            margin-left: 5.8%;
+                            display: block;
+                            width: 100%;
+                            background-color: white;
+                            padding: 15px 10px;
+                            box-sizing: border-box;    
+                            outline: none;
+                            @include transitionlong;
+                            resize: none;
+                            &::placeholder{
+                                text-transform: uppercase;
+                            }
+                            &:focus{
+                                border-radius: 20px;
+                            }
+                            }
+                            >button{
+                                width: 90%;
+                                background-color: #378cc4;
+                                border: none;
+                                padding: 10px 0px;
+                                box-sizing: border-box;
+                                color: white;
+                                @include font;
+                                position: absolute;
+                                margin-top: 10px;
+                                left: 5.8%;
+                                @include transitionlong;
+                                &:hover{
+                                    background-color: #00a2e8;
+                                    box-shadow: 4px 4px 6px black;
+                                    font-weight: bolder;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                    // end make form
+                    // make name of designer
+                    >section:nth-of-type(3){
+                        width: 100%;
+                        background-color: #000;
+                        >h1:nth-child(1){
+                            width: 100%;
+                            padding: 10px 0px;
+                            box-sizing: border-box;
+                            color: white;
+                            font-size: 18px;
+                            @include font;
+                            background-color: #000;
+                            text-align: center;
+                        }
+                    }
+                    // end make name of designer
+                }
+                // end make footer
         // END MAKE BODY
     }
 }

@@ -718,8 +718,8 @@
             }
         }
         // end make product
-                // make costomers
-                >section:nth-of-type(6){
+        // make costomers
+        >section:nth-of-type(6){
                     width: 100%;
                     height: 750px;
                     background-color: white;
@@ -833,7 +833,334 @@
                             // end make radio
                         }
                     }
+        }
+        // end make costomers
+        // make form
+        >section.form{
+                    // make paralax
+                    width: 100%;
+                    height: 600px;
+                    background-color: #378cc4;
+                    position: relative;
+                    &::after{
+                        content:"";
+                        width: 100%;
+                        height: 100%;
+                        background:url("../images/form/asli.png") no-repeat center center scroll;
+                        background-size: cover;
+                        position:absolute;
+                        z-index: 88889;
+                    }
+                    // end make paralx
+                    // make headline
+                    >section:nth-of-type(1){
+                        width: 100%;
+                        position: absolute;
+                        >h1:nth-of-type(1){
+                            width: 100%;
+                            text-align: center;
+                            color: #56504d;
+                            font-size: 48px;
+                            @include font;
+                            font-weight: 900;
+                            padding-top: 40px;
+                            box-sizing: border-box;
+                            word-spacing: 20px;
+                            text-shadow: 1px 1px 2px black;
+                            >span:nth-of-type(1){
+                                color: white;
+                            }
+                        }
+                    }
+                    // end make headline
+                    >form:nth-of-type(1){
+                        // margin-top: 20px;
+                        position: absolute;
+                        display: flex;
+                        flex-flow: column wrap;
+                        width: 100%;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding-top: 40px;
+                        box-sizing: border-box;
+                        z-index: 99999;
+                        >input[type=email]{
+                            display: block;
+                            width: 50%;
+                            margin-left: calc(50% - 50% / 2);
+                            padding: 20px;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                            border: none;
+                            outline: none;
+                            font-size: 16px;
+                            &:invalid{
+                                border: 2px solid red;
+                                background-color:rgba(255, 0, 0, 0.186);
+                            }
+                            &:valid{
+                                border: 1px solid green;
+                            }
+                        }
+                        >input[type=text]{
+                            display: block;
+                            width: 50%;
+                            margin-left: calc(50% - 50% / 2);
+                            padding: 20px;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                            border: none;
+                            outline: none;
+                            margin-top: 30px;
+                            font-size: 16px;
+                            &:invalid{
+                                border: 2px solid red;
+                            }
+                        }
+                        >button{
+                            width: 50%;
+                            display: block;
+                            margin-left: calc(50% - 50% / 2);
+                            font-size: 30px;
+                            @include font;
+                            font-weight: 900;
+                            color: white;
+                            background-color: #786960;
+                            padding: 16px 0px;
+                            box-sizing: border-box;
+                            border: none;
+                            border-radius: 10px;
+                            margin-top: 40px;
+                            @include transitionshort;
+                            &:hover{
+                                box-shadow: 6px 6px 12px black;
+                                background-color: #fff;
+                                border: 2px solid black;
+                                color: #000;
+                                font-weight: 900;
+                                width: 52%;
+                                margin-left:calc(50% - 52% /2);
+                                font-size: 34px;
+                            }
+                        }
+                    }
+        }
+        // end make form
+        // make footer
+        >footer.footer{
+            width: 100%;
+            height: 700px;
+            // background-color: #00a2e8;
+            // make detail
+            >section:nth-of-type(1){
+                width: 100%;
+                height: 280px;
+                background-color: #000;
+                padding-top: 80px;
+                box-sizing: border-box;
+                >h1:nth-of-type(1){
+                    text-align: center;
+                    @include font;
+                    color: white;
+                    font-size: 60px;
+                    font-weight: bolder;
                 }
-                // end make costomers
+                >h2:nth-of-type(1){
+                    text-align: center;
+                    @include font;
+                    color: white;
+                    font-size: 30px;
+                    font-weight: bolder;
+                }
+            }
+            // end make detail
+            // make form
+            >section:nth-of-type(2){
+                width: 100%;
+                height: 540px;
+                position: relative;
+                z-index: 79998;
+                display: flex;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 80000;
+                    background-color: rgba(0, 0, 0, 0.829);
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 80%;
+                    height: 100%;
+                    left: calc(50% - 80% / 2);
+                    background: url("../images/footer/bg-world.png") no-repeat center center scroll;
+                    background-size: contain;
+                    z-index: 80001;
+                }
+                >section:nth-of-type(1){
+                    width: 80%;
+                    height:100%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: left;
+                    align-items: center;
+                    position: relative;
+                    z-index: 80010;
+                    padding-top: 90px;
+                    box-sizing: border-box;
+                    >span:nth-of-type(1){
+                        display: block;
+                        align-self: flex-start;
+                        @include font;
+                        color: black;
+                        font-size: 70px;
+                        font-weight: bolder;
+                        padding-left: 100px;
+                        padding-bottom: 30px;
+                        box-sizing: border-box;
+                        // text-align: left;
+                        &::first-letter{
+                            color: #378cc4;
+                        }
+                    }
+                    >article:nth-of-type(1){
+                        width: 100%;
+                        // text-align: center;
+                        padding-left: 100px;
+                        box-sizing: border-box;
+                        >h1:nth-of-type(1){
+                            font-size: 22px;
+                            color: white;
+                            @include font;
+                        }
+                        >h2:nth-of-type(1){
+                            padding-top: 30px;
+                            box-sizing: border-box;
+                            width: 42%;
+                            font-size: 14px;
+                            color: white;
+                            @include font;
+                            line-height: 30px;
+                        }
+                    }
+                    >section:nth-of-type(1){
+                        display: flex;
+                        width:90%;
+                        justify-content: start;
+                        padding-top: 30px;
+                        padding-left: 60px;
+                        box-sizing: border-box;
+                        >div{
+                            padding: 10px;
+                            // background-color: #00a2e8;
+                            margin-right: 3px;
+                            color: white;
+                            font-weight: bolder;
+                            &:hover{
+                                border: 2px solid #00a2e8;
+                            }
+                        }
+                    }
+                }
+                >form:nth-of-type(1){
+                    width:50%;
+                    height: 100%;
+                    // background-color:cadetblue ;
+                    position: relative;
+                    z-index: 80010;
+                    padding-top: 150px;
+                    box-sizing: border-box;
+                    position: relative;
+                    >input[type=text]{
+                        display: inline-block;
+                        background-color: white;
+                        width: 40%;
+                        padding: 15px 10px;
+                        box-sizing: border-box;
+                        outline: none;
+                        @include transitionlong;
+                        &::placeholder{
+                            text-transform: uppercase;
+                        }
+                        &:focus{
+                            border-radius: 20px;
+                        }                
+                    }
+                    >input[type=email]{
+                        background-color: white;
+                        width: 40%;
+                        padding: 15px 10px;
+                        box-sizing: border-box;
+                        margin-left: 15px;
+                        outline: none;
+                        @include transitionlong;
+                        &::placeholder{
+                            text-transform: uppercase;
+                        }
+                        &:focus{
+                            border-radius: 20px;
+                        }
+                    }
+                    >textarea{
+                    margin-top: 15px;
+                    display: block;
+                    width: 84.5%;
+                    background-color: white;
+                    padding: 15px 10px;
+                    box-sizing: border-box;    
+                    outline: none;
+                    @include transitionlong;
+                    resize: none;
+                    &::placeholder{
+                        text-transform: uppercase;
+                    }
+                    &:focus{
+                        border-radius: 20px;
+                    }
+                    }
+                    >button{
+                        width: 68%;
+                        background-color: #378cc4;
+                        border: none;
+                        padding: 10px 0px;
+                        box-sizing: border-box;
+                        color: white;
+                        @include font;
+                        position: absolute;
+                        margin-top: 10px;
+                        right: 23.8%;
+                        @include transitionlong;
+                        &:hover{
+                            background-color: #00a2e8;
+                            box-shadow: 4px 4px 6px black;
+                            font-weight: bolder;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+            // end make form
+            // make name of designer
+            >section:nth-of-type(3){
+                width: 100%;
+                background-color: #000;
+                >h1:nth-child(1){
+                    width: 100%;
+                    padding: 10px 0px;
+                    box-sizing: border-box;
+                    color: white;
+                    font-size: 18px;
+                    @include font;
+                    background-color: #000;
+                    text-align: center;
+                }
+            }
+            // end make name of designer
+        }
+        // end make footer
     }
 }
