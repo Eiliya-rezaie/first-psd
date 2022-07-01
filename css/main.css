@@ -1452,7 +1452,92 @@
               body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(2) > span {
                 font-size: 18px;
                 font-family: "opensans";
-                color: white; } }
+                color: white; }
+  body > section:nth-of-type(6) {
+    width: 100%;
+    height: 750px;
+    background-color: white; }
+    body > section:nth-of-type(6) > section:nth-of-type(1) {
+      width: inherit; }
+      body > section:nth-of-type(6) > section:nth-of-type(1) > h1:nth-of-type(1) {
+        padding-top: 40px;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        font-family: "opensans";
+        font-size: 44px;
+        text-transform: uppercase;
+        opacity: 0.7;
+        font-weight: 900; }
+        body > section:nth-of-type(6) > section:nth-of-type(1) > h1:nth-of-type(1) > span:nth-of-type(1) {
+          color: #378cc4;
+          opacity: 1; }
+    body > section:nth-of-type(6) > section:nth-of-type(2) {
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      grid-template-areas: "section section section";
+      grid-template-columns: 270px 270px 270px;
+      padding: 0px 0px;
+      padding-top: 30px;
+      padding-left: 50px;
+      box-sizing: border-box;
+      grid-column-gap: 20px; }
+      body > section:nth-of-type(6) > section:nth-of-type(2) > section {
+        width: 200px;
+        padding: 10px 0px;
+        box-sizing: border-box; }
+        body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(1) {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background: #736b66;
+          margin-left: calc(50% - 150px /2); }
+        body > section:nth-of-type(6) > section:nth-of-type(2) > section > article:nth-of-type(1) {
+          width: 100%; }
+          body > section:nth-of-type(6) > section:nth-of-type(2) > section > article:nth-of-type(1) > p:nth-of-type(1) {
+            font-size: 15px;
+            font-family: "opensans";
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+            text-align: center; }
+        body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(2) {
+          width: 100%;
+          padding-top: 20px;
+          box-sizing: border-box; }
+          body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(2) > p:nth-of-type(1) {
+            width: 100%;
+            text-align: center;
+            color: #378cc4;
+            font-family: "opensans";
+            font-size: 18px;
+            font-weight: 900; }
+          body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(2) > p:nth-of-type(2) {
+            width: 100%;
+            text-align: center;
+            font-family: "opensans";
+            font-size: 14px;
+            font-weight: 900; }
+        body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(3) {
+          width: 100%;
+          display: grid;
+          justify-content: center;
+          grid-column-gap: 10px;
+          grid-template-areas: "section section section section section";
+          padding-top: 30px;
+          box-sizing: border-box; }
+          body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(3) > section {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 3px solid black;
+            background-color: #378cc4; }
+          body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(3) > section:nth-of-type(5) {
+            background-color: #fff;
+            transition: all linear 110ms; }
+            body > section:nth-of-type(6) > section:nth-of-type(2) > section > section:nth-of-type(3) > section:nth-of-type(5):hover {
+              background-color: #378cc4; } }
 
 * {
   margin: 0; }
@@ -2533,7 +2618,7 @@
       margin-top: 20px; }
   body > section:nth-of-type(5) {
     width: 100%;
-    height: 1650px;
+    height: 1620px;
     background: url("../images/our-product/bg.png") no-repeat center center scroll;
     background-size: cover; }
     body > section:nth-of-type(5) > section:nth-of-type(1) {
@@ -3116,6 +3201,156 @@
               align-items: center;
               transition: all linear 300ms; }
               body > section:nth-of-type(3) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(2) > span {
+                font-size: 18px;
+                font-family: "opensans";
+                color: white; }
+  body > section:nth-of-type(4) {
+    width: 100%;
+    background-color: #378cc4;
+    padding: 50px 0px;
+    box-sizing: border-box; }
+    body > section:nth-of-type(4) > h1 {
+      font-family: "opensans";
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      text-shadow: 3px 3px 5px black; }
+    body > section:nth-of-type(4) > h2 {
+      font-family: "opensans";
+      font-size: 30px;
+      font-weight: lighter;
+      color: white;
+      text-align: center;
+      margin-top: 20px; }
+  body > section:nth-of-type(5) {
+    width: 100%;
+    height: 1620px;
+    background: url("../images/our-product/bg.png") no-repeat center center scroll;
+    background-size: cover; }
+    body > section:nth-of-type(5) > section:nth-of-type(1) {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.813); }
+      body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(1) {
+        width: 100%;
+        padding-top: 50px;
+        box-sizing: border-box; }
+        body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(1) > h1 {
+          font-family: "opensans";
+          font-size: 38px;
+          color: #fff;
+          text-align: center;
+          text-shadow: 4px 4px 6px black; }
+          body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(1) > h1 > span {
+            color: #00a2e8; }
+      body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) {
+        width: 100%;
+        height: 885px;
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 20px;
+        box-sizing: border-box;
+        justify-content: center; }
+        body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section {
+          text-align: center;
+          width: 95%;
+          height: 390px;
+          background-color: #fff;
+          margin: 40px 10px; }
+          body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) {
+            width: 100%;
+            height: 410px;
+            background-color: #00a2e8;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1):hover > section.absolute {
+              opacity: 1; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute {
+              width: 96%;
+              height: 96%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #7a716d;
+              position: absolute;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              opacity: 0;
+              transition: all linear 110ms; }
+              body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section {
+                width: 90%;
+                height: 40%;
+                text-align: center;
+                background: transparent; }
+                body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.icon {
+                  padding: 10px 15px 0px 15px;
+                  box-sizing: border-box; }
+                  body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.icon > span {
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 45px;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    box-sizing: border-box;
+                    transition: all linear 300ms; }
+                    body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.icon > span:hover {
+                      background-color: #00a2e8;
+                      border: none; }
+                body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping {
+                  width: 80%;
+                  display: inline-block;
+                  border: 2px solid lightgray;
+                  background-color: transparent;
+                  margin-top: 10px;
+                  transition: all linear 300ms; }
+                  body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping:hover {
+                    background-color: #35312e; }
+                  body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping > span {
+                    width: 90%;
+                    font-family: "opensans";
+                    color: white;
+                    font-size: 16px;
+                    text-transform: uppercase; }
+                    body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1) > section.absolute > section > section.shopping > span > span {
+                      font-size: 30px;
+                      color: lightgray;
+                      box-sizing: border-box; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1):hover ~ section > section:nth-of-type(1) {
+              background-color: #00a2e8; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(1):hover ~ section > section:nth-of-type(2) {
+              background-color: #86c3dd; }
+          body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            background-color: aqua; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(1) {
+              width: 80%;
+              height: inherit;
+              background-color: #35312e;
+              display: flex;
+              align-items: center;
+              padding-left: 10px;
+              box-sizing: border-box;
+              transition: all linear 300ms; }
+              body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(1) > span {
+                font-size: 18px;
+                font-family: "opensans";
+                color: #fff; }
+            body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(2) {
+              width: 20%;
+              height: inherit;
+              background-color: #948a85;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: all linear 300ms; }
+              body > section:nth-of-type(5) > section:nth-of-type(1) > section:nth-of-type(2) > section > section:nth-of-type(2) > section:nth-of-type(2) > span {
                 font-size: 18px;
                 font-family: "opensans";
                 color: white; } }
